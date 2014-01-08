@@ -1,0 +1,8 @@
+" Cscope key mapping 
+Bundle "aceofall/cscope_maps.vim.git"
+
+" Buffer Explorer
+Bundle "vim-scripts/bufexplorer.zip.git"
+
+" SrcExpl
+Bundle "vim-scripts/SrcExpl.git"

@@ -1,0 +1,17 @@
+" ========================================================================
+"  IAMROOT comments
+" ========================================================================
+map ,c <ESC>o// ARM10C <C-R>=strftime("%Y%m%d")<CR><ESC>
+
+" Unmap Ctrl-\. This key is used for cscope.
+nunmap <C-\>
+
+" ==== NERD tree
+" Shift-T for nerd tree
+nmap <S-T> :NERDTreeToggle<CR> <C-w>l
+" Open the project tree and expose current file in the nerdtree with Shift-F
+nnoremap <silent> <S-F> :NERDTreeFind<CR>:vertical res 30<CR>
+let g:NERDTreeHighlightCursorline=1
+
+" Tagbar width fix to 30
+let g:tagbar_width = 30
