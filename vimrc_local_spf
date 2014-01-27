@@ -1,0 +1,49 @@
+" toggling menu for GVIM
+map <silent> <C-F2> :if &guioptions =~# 'T' <Bar>
+                         \set guioptions-=T <Bar>
+                         \set guioptions-=m <Bar>
+                    \else <Bar>
+                         \set guioptions+=T <Bar>
+                         \set guioptions+=m <Bar>
+                      \endif<CR>
+
+" UTF-8, euc-kr Korean document open easliy
+if v:lang =~ "^ko"
+    set encoding=utf-8
+    set fileencodings=utf-8,cp949
+    set guifontset=-*-*-medium-r-normal--16-*-*-*-*-*-*-*
+    set guifont=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10
+    language message en_US
+endif
+
+if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
+    set encoding=utf-8
+    set fileencodings=utf-8,cp949
+endif
+
+" if you press wrong command, display splash the screen instead of ringing the
+" bell (visualbell)
+set visualbell
+
+" Do not display scroll bar.
+if has("gui_running")
+    set go-=l
+    set go-=L
+    set go-=r
+    set go-=R
+    set go-=b
+endif
+
+" Configure method is changed.
+set go-=m
+
+" Do not display Tool bar.
+set go-=T
+
+" Display the current editing file name 
+set title
+
+" when it is the startup, it makes the whole screen. 
+if has("win32")
+    au GUIEnter * simalt ~x
+endif
