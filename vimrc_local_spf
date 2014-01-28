@@ -1,19 +1,21 @@
 " toggling menu for GVIM
 map <silent> <C-F2> :if &guioptions =~# 'T' <Bar>
-                         \set guioptions-=T <Bar>
-                         \set guioptions-=m <Bar>
-                    \else <Bar>
-                         \set guioptions+=T <Bar>
-                         \set guioptions+=m <Bar>
-                      \endif<CR>
+			\set guioptions-=T <Bar>
+			\set guioptions-=m <Bar>
+			\else <Bar>
+			\set guioptions+=T <Bar>
+			\set guioptions+=m <Bar>
+			\endif<CR>
 
+" configure locale
 " UTF-8, euc-kr Korean document open easliy
 if v:lang =~ "^ko"
     set encoding=utf-8
     set fileencodings=utf-8,cp949
     set guifontset=-*-*-medium-r-normal--16-*-*-*-*-*-*-*
     set guifont=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10
-    language message en_US
+    set guifontwide=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10;cDEFAULT
+    language messages en_US
 endif
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
@@ -40,6 +42,9 @@ set go-=m
 " Do not display Tool bar.
 set go-=T
 
+" Do not pop the dialog 'simple selection'
+set go+=c
+
 " Display the current editing file name 
 set title
 
@@ -47,3 +52,9 @@ set title
 if has("win32")
     au GUIEnter * simalt ~x
 endif
+
+" file name is not used shell shash /
+set noshellslash
+
+" Thess fuctions can use if you have the HOME directory.
+""let s:home_dir = $HOME_KID
