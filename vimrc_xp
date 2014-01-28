@@ -1,0 +1,16 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" The Program Basic Configuration
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Disable Menu. Do the first other command.
+"let install_default_menus = 1
+"let did_install_syntax_menu = 1
+"let skip_syntax_sel_menu = 1
+
+" GTAGS Auto load configure
+"let GtagsCscope_Auto_Load = 0	
+
+set nocompatible
+
+let $HOME=$HOME_KID
+source $HOME_KID\.vimrc
