@@ -6,3 +6,6 @@ Bundle "vim-scripts/bufexplorer.zip.git"
 
 " SrcExpl
 Bundle "vim-scripts/SrcExpl.git"
+
+" Vim-Mark
+Bundle "aceofall/vim-mark.git"

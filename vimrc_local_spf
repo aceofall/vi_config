@@ -58,3 +58,6 @@ set noshellslash
 
 " Thess fuctions can use if you have the HOME directory.
 ""let s:home_dir = $HOME_KID
+
+" Unmap '<leader>/' because of '<leader>/' key use vim-mark plugins
+nunmap <silent> <leader>/
