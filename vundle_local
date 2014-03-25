@@ -9,3 +9,6 @@ Bundle "vim-scripts/SrcExpl.git"
 
 " Vim-Mark
 Bundle "aceofall/vim-mark.git"
+
+" TagBar
+Bundle "majutsushi/tagbar"

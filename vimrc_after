@@ -4,6 +4,7 @@
 map ,c <ESC>o// ARM10C <C-R>=strftime("%Y%m%d")<CR><ESC>
 map ,k <ESC>o// KID <C-R>=strftime("%Y%m%d")<CR><ESC>
 map ,p <ESC>o// PRE-KID <C-R>=strftime("%Y%m%d")<CR><ESC>
+map ,e <ESC>o// STUDY-KID <C-R>=strftime("%Y%m%d")<CR><ESC>
 
 " Unmap Ctrl-\. This key is used for cscope.
 nunmap <C-\>
