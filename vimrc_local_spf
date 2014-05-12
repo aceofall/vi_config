@@ -61,3 +61,9 @@ set noshellslash
 
 " Unmap '<leader>/' because of '<leader>/' key use vim-mark plugins
 nunmap <silent> <leader>/
+
+" Use My Local settings {
+    for fpath in split(globpath('~/.vi_config/setting', '*.vim'), '\n')
+      exe 'source' fpath
+    endfor
+" }
