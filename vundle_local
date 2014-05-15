@@ -12,3 +12,6 @@ Bundle "aceofall/vim-mark.git"
 
 " TagBar
 Bundle "majutsushi/tagbar"
+
+" ShowMark
+Bundle "xsunsmile/showmarks.git"
