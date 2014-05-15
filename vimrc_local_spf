@@ -67,3 +67,9 @@ nunmap <silent> <leader>/
       exe 'source' fpath
     endfor
 " }
+
+" Linux Kernel configuration checker {
+    for fpath in split(globpath('~/.vi_config/plugin', '*.vim'), '\n')
+      exe 'source' fpath
+    endfor
+" }
