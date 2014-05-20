@@ -15,7 +15,11 @@ if v:lang =~ "^ko"
     set guifontset=-*-*-medium-r-normal--16-*-*-*-*-*-*-*
     set guifont=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10
     set guifontwide=Andale_Mono:h10,Menlo:h10,Consolas:h10,Courier_New:h10;cDEFAULT
-    language messages en_US
+
+    " Windows platform language messages
+    if WINDOWS()
+        language messages en_US
+    endif
 endif
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
@@ -61,6 +65,11 @@ set noshellslash
 
 " Word spell checker disable
 set nospell
+
+" Linux platform colorscheme
+if LINUX()
+    colorscheme desert
+endif
 
 " Unmap '<leader>/' because of '<leader>/' key use vim-mark plugins
 nunmap <silent> <leader>/

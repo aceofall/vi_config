@@ -10,8 +10,11 @@ Bundle "vim-scripts/SrcExpl.git"
 " Vim-Mark
 Bundle "aceofall/vim-mark.git"
 
-" TagBar
-Bundle "majutsushi/tagbar"
+" spf13 vim config check
+if !filereadable(expand("~/.vimrc.before"))
+    " TagBar
+    Bundle "majutsushi/tagbar"
+endif
 
 " ShowMark
 Bundle "xsunsmile/showmarks.git"
