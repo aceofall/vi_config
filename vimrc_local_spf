@@ -74,6 +74,9 @@ endif
 " Unmap '<leader>/' because of '<leader>/' key use vim-mark plugins
 nunmap <silent> <leader>/
 
+"Clear current search highlight by double tapping //
+nmap <silent> // :nohlsearch<CR>
+
 " Use My Local settings {
     for fpath in split(globpath('~/.vi_config/setting', '*.vim'), '\n')
       exe 'source' fpath
