@@ -77,6 +77,13 @@ nunmap <silent> <leader>/
 "Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
+" Create window splits easier. The default way is Ctrl-w,v and Ctrl-w,s.
+" I remap this to vv and ss
+if WINDOWS()
+    nnoremap <silent> vv <C-w>v
+    nnoremap <silent> ss <C-w>s
+endif
+
 " Use My Local settings {
     for fpath in split(globpath('~/.vi_config/setting', '*.vim'), '\n')
       exe 'source' fpath
