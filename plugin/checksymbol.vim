@@ -103,9 +103,17 @@ fu! Commas(var, nr)
 	return result
 endfu
 
+fu! FindMsbIndex(var)
+	let result = ""
+	let str = a:var
+	let result = strlen(str) - strridx(str,"1")
+	return result
+endfu
+
 fu! BinFmt(var)
 	let b = Num2Bin(a:var)
-	return Commas(b,4) . " (" . strlen(b) . ")"
+	return Commas(b,4) . " (" . FindMsbIndex(b) . ")"
+""	return Commas(b,4) . " (" . strlen(b) . ")"
 endfu
 
 fu! Shl(var,n)
