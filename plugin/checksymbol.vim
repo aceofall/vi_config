@@ -106,7 +106,7 @@ endfu
 fu! FindMsbIndex(var)
 	let result = ""
 	let str = a:var
-	let result = strlen(str) - strridx(str,"1")
+	let result = strlen(str) - stridx(str,"1")
 	return result
 endfu
 
