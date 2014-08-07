@@ -114,15 +114,14 @@ create_symlinks() {
         mkdir -p "$endpath/.vim/settings"
     fi
 
-    # Useful setting for vim plugins
     lnif "$endpath/tmux_conf_user"      "$HOME/.tmux.conf.user"
     lnif "$endpath/vimrc_after"         "$HOME/.vimrc.after"
 
-    lnif "$endpath/checksymbol.vim"     "$endpath/.vim/after/plugin/checksymbol.vim"
-    lnif "$endpath/SrcExpl.vim"         "$endpath/.vim/settings/SrcExpl.vim"
-    lnif "$endpath/bufexplorer.vim"     "$endpath/.vim/settings/bufexplorer.vim"
-    lnif "$endpath/vim-mark.vim"        "$endpath/.vim/settings/vim-mark.vim"
-
+    # Useful setting for vim plugins
+    lnif "$endpath/plugin/checksymbol.vim"      "$HOME/.vim/after/plugin/checksymbol.vim"
+    lnif "$endpath/setting/SrcExpl.vim"         "$HOME/.vim/settings/SrcExpl.vim"
+    lnif "$endpath/setting/bufexplorer.vim"     "$HOME/.vim/settings/bufexplorer.vim"
+    lnif "$endpath/setting/vim-mark.vim"        "$HOME/.vim/settings/vim-mark.vim"
 
     ret="$?"
     success "$1"
