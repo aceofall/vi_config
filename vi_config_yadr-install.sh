@@ -122,6 +122,7 @@ create_symlinks() {
     lnif "$endpath/setting/SrcExpl.vim"         "$HOME/.vim/settings/SrcExpl.vim"
     lnif "$endpath/setting/bufexplorer.vim"     "$HOME/.vim/settings/bufexplorer.vim"
     lnif "$endpath/setting/vim-mark.vim"        "$HOME/.vim/settings/vim-mark.vim"
+    lnif "$endpath/vundle_local"                "$HOME/.vim/.vundles.local"
 
     ret="$?"
     success "$1"
