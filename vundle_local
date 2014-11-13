@@ -1,5 +1,8 @@
-" Cscope key mapping 
+" Cscope key mapping
 Bundle "aceofall/cscope_maps.vim.git"
+
+" Gtags key mapping
+Bundle "aceofall/gtags.vim.git"
 
 " Buffer Explorer
 Bundle "vim-scripts/bufexplorer.zip.git"
