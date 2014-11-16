@@ -1,23 +1,30 @@
-" Cscope key mapping
-Bundle "aceofall/cscope_maps.vim.git"
+" My common vim plugin {
+	" Cscope key mapping
+	Bundle "aceofall/cscope_maps.vim.git"
 
-" Gtags key mapping
-Bundle "aceofall/gtags.vim.git"
+	" Gtags key mapping
+	Bundle "aceofall/gtags.vim.git"
 
-" Buffer Explorer
-Bundle "vim-scripts/bufexplorer.zip.git"
+	" Buffer Explorer
+	Bundle "vim-scripts/bufexplorer.zip.git"
 
-" SrcExpl
-Bundle "vim-scripts/SrcExpl.git"
+	" SrcExpl
+	Bundle "vim-scripts/SrcExpl.git"
 
-" Vim-Mark
-Bundle "aceofall/vim-mark.git"
+	" Vim-Mark
+	Bundle "aceofall/vim-mark.git"
+" }
 
-" spf13 vim config check
-if !filereadable(expand("~/.vimrc.before"))
-    " TagBar
-    Bundle "majutsushi/tagbar"
-endif
+" SPF platform vim plugin for me {
+	if SPF()
+	    " ShowMark
+	    Bundle "xsunsmile/showmarks.git"
+	endif
+" }
 
-" ShowMark
-Bundle "xsunsmile/showmarks.git"
+" YADR platform vim plugin for me {
+	if YADR()
+	    " TagBar
+	    Bundle "majutsushi/tagbar"
+	endif
+" }

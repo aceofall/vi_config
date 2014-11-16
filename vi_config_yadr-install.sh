@@ -114,6 +114,7 @@ create_symlinks() {
         mkdir -p "$endpath/.vim/settings"
     fi
 
+    lnif "$endpath/vi_config_before"    "$HOME/.vimrc.before"
     lnif "$endpath/tmux_conf_user"      "$HOME/.tmux.conf.user"
     lnif "$endpath/vimrc_after"         "$HOME/.vimrc.after"
 
