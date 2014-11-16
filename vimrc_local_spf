@@ -79,10 +79,10 @@ nmap <silent> // :nohlsearch<CR>
 
 " Create window splits easier. The default way is Ctrl-w,v and Ctrl-w,s.
 " I remap this to vv and ss
-if WINDOWS()
-    nnoremap <silent> vv <C-w>v
-    nnoremap <silent> ss <C-w>s
+nnoremap <silent> vv <C-w>v
+nnoremap <silent> ss <C-w>s
 
+if WINDOWS()
     nnoremap <MiddleMouse> :ta <C-R>=expand("<cword>")<CR><CR>1<CR><CR>
     map <X1Mouse> <C-O>
     map <X2Mouse> <C-I>
