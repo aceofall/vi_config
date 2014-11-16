@@ -2,7 +2,7 @@
 	" Identify vim configuration platform {
 		silent function! SPF()
 			" Check to exit as if .vimrc.before.fork file"
-			if filereadable(expand("~/.vimrc.before.fork"))
+			if filereadable(expand("~/.vimrc.bundles"))
 				return 1
 			else
 				return 0
@@ -10,7 +10,7 @@
 		endfunction
 		silent function! YADR()
 			" Check to exit as if .vimrc.before.fork file"
-			if !filereadable(expand("~/.vimrc.before.fork"))
+			if !filereadable(expand("~/.vimrc.bundles"))
 				return 1
 			else
 				return 0
