@@ -68,7 +68,7 @@ set nospell
 
 " Linux platform colorscheme
 if LINUX()
-    colorscheme desert
+    colorscheme desertEx
 endif
 
 " Unmap '<leader>/' because of '<leader>/' key use vim-mark plugins
