@@ -115,6 +115,8 @@ create_symlinks() {
     fi
 
     lnif "$endpath/vi_config_before"    "$HOME/.vimrc.before"
+    lnif "$endpath/vimrc_local_spf"     "$HOME/.vimrc.local"
+    lnif "$endpath/vundle_local"        "$HOME/.vimrc.bundles.local"
 
     ret="$?"
     success "$1"
