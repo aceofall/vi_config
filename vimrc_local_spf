@@ -84,13 +84,20 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
 
 if WINDOWS()
+    " Mouse forward,backward key use for tag search
     nnoremap <MiddleMouse> :ta <C-R>=expand("<cword>")<CR><CR>1<CR><CR>
     map <X1Mouse> <C-O>
     map <X2Mouse> <C-I>
     nmap <C-X1Mouse> :tprevious<CR>
     nmap <C-X2Mouse> :tnext<CR>
     nmap <2-LeftMouse> :pop<CR>
+
+    " Create tab window like working screen/tmux.
+    nmap <C-A><C-A> :tabp<CR>
+    nmap <C-A>c     :tabnew<CR>
+    nmap <C-A>d     :tabc<CR>
 endif
+
 
 " Use My Local settings {
     for fpath in split(globpath('~/.vi_config/setting', '*.vim'), '\n')
