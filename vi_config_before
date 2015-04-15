@@ -16,5 +16,13 @@
 				return 0
 			endif
 		endfunction
+		silent function! MACVIM()
+			" Check to macvim gui"
+			if has("gui_macvim")
+				return 1
+			else
+				return 0
+			endif
+		endfunction
 	" }
 " }

@@ -21,3 +21,10 @@ let g:tagbar_width = 30
 " ==== Syntastic
 " do not show the error list automatically
 let g:syntastic_auto_loc_list=0
+
+if MACVIM()
+    " Create tab window like working screen/tmux.
+    nmap <C-A><C-A> :tabp<CR>
+    nmap <C-A>c     :tabnew<CR>
+    nmap <C-A>d     :tabc<CR>
+endif

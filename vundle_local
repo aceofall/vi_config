@@ -19,6 +19,9 @@
 	if SPF()
 	    " ShowMark
 	    Bundle "xsunsmile/showmarks.git"
+
+	    " IndexedSearch
+	    Bundle "vim-scripts/IndexedSearch.git"
 	endif
 " }
 
