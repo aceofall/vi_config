@@ -96,6 +96,14 @@ if WINDOWS()
     nmap <C-A><C-A> :tabp<CR>
     nmap <C-A>c     :tabnew<CR>
     nmap <C-A>d     :tabc<CR>
+
+    " moving aroung in command mode
+     cnoremap <c-h> <left>
+     cnoremap <c-j> <down>
+     cnoremap <c-k> <up>
+     cnoremap <c-l> <right>
+     cnoremap ^     <home>
+     cnoremap $     <end>
 endif
 
 
