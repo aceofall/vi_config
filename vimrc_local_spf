@@ -104,6 +104,9 @@ if WINDOWS()
      cnoremap <c-l> <right>
      cnoremap ^     <home>
      cnoremap $     <end>
+
+    " Mouse is not used.
+    set mouse=
 endif
 
 
@@ -118,6 +121,14 @@ endif
       exe 'source' fpath
     endfor
 " }
+"
+
+" Highlight TODO, FIXME, NOTE, etc.
+if has("autocmd")
+    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
+    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
+    autocmd Syntax * call matchadd('ErrorMsg', '\W\zs\(ERR\)')
+endif
 
 " IAMROOT comments
 map ,c <ESC>o// ARM10C <C-R>=strftime("%Y%m%d")<CR><ESC>

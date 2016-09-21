@@ -13,6 +13,15 @@
 
 	" Vim-Mark
 	Bundle "aceofall/vim-mark.git"
+
+	" Vim-Wiki
+	Bundle "vimwiki/vimwiki"
+
+	" Vim-Wiki
+	Bundle "vim-airline/vim-airline-themes"
+
+	" Vim-Swoop
+	Bundle "pelodelfuego/vim-swoop"
 " }
 
 " SPF platform vim plugin for me {
