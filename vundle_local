@@ -17,9 +17,6 @@
 	" Vim-Wiki
 	Bundle "vimwiki/vimwiki"
 
-	" Vim-Wiki
-	Bundle "vim-airline/vim-airline-themes"
-
 	" Vim-Swoop
 	Bundle "pelodelfuego/vim-swoop"
 " }

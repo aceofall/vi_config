@@ -28,3 +28,6 @@ if MACVIM()
     nmap <C-A>c     :tabnew<CR>
     nmap <C-A>d     :tabc<CR>
 endif
+
+" ==== Colorscheme
+colorscheme desert
