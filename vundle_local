@@ -19,6 +19,9 @@
 
 	" Vim-Swoop
 	Bundle "pelodelfuego/vim-swoop"
+
+	" Pydiction
+    Bundle "vim-scripts/Pydiction"
 " }
 
 " SPF platform vim plugin for me {
