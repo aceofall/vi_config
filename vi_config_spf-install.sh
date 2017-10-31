@@ -118,6 +118,9 @@ create_symlinks() {
     lnif "$endpath/vimrc_local_spf"     "$HOME/.vimrc.local"
     lnif "$endpath/vundle_local"        "$HOME/.vimrc.bundles.local"
 
+    # GNU global gtag
+    lnif "$endpath/globalrc"            "$HOME/.globalrc"
+
     ret="$?"
     success "$1"
     debug
@@ -126,14 +129,14 @@ create_symlinks() {
 setup_vundle() {
     system_shell="$SHELL"
     export SHELL='/bin/sh'
-    
+
     vim \
         -u "$app_dir/.vimrc.bundles.default" \
         "+set nomore" \
         "+BundleInstall!" \
         "+BundleClean" \
         "+qall"
-    
+
     export SHELL="$system_shell"
 
     success "$1"

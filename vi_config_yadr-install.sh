@@ -139,6 +139,12 @@ create_symlinks() {
     lnif "$endpath/zsh/mountAndroid.zsh"        "$HOME/.zsh.after/mountAndroid.zsh"
     lnif "$endpath/zsh/pyenv.zsh"               "$HOME/.zsh.after/pyenv.zsh"
 
+    # GNU global gtag
+    lnif "$endpath/zsh/gtags.zsh"               "$HOME/.zsh.after/gtags.zsh"
+
+    # GNU global gtag
+    lnif "$endpath/globalrc"                    "$HOME/.globalrc"
+
     ret="$?"
     success "$1"
     debug
