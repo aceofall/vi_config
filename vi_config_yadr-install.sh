@@ -107,7 +107,6 @@ create_symlinks() {
     endpath="$app_dir"
 
     if [ ! -d "$endpath/.vim/after/plugin" ]; then
-        msg "\nTEST!!!!."
         mkdir -p "$endpath/.vim/after/plugin"
     fi
 
