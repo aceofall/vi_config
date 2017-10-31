@@ -27,7 +27,10 @@ if MACVIM()
     nmap <C-A><C-A> :tabp<CR>
     nmap <C-A>c     :tabnew<CR>
     nmap <C-A>d     :tabc<CR>
-endif
 
-" ==== Colorscheme
-colorscheme desert
+    " ==== Colorscheme
+    colorscheme solarized
+else
+    " ==== Colorscheme
+    colorscheme desert
+endif

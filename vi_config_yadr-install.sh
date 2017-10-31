@@ -107,6 +107,7 @@ create_symlinks() {
     endpath="$app_dir"
 
     if [ ! -d "$endpath/.vim/after/plugin" ]; then
+        msg "\nTEST!!!!."
         mkdir -p "$endpath/.vim/after/plugin"
     fi
 
@@ -120,12 +121,24 @@ create_symlinks() {
 
     # Useful setting for vim plugins
     lnif "$endpath/plugin/checksymbol.vim"      "$HOME/.vim/after/plugin/checksymbol.vim"
-    lnif "$endpath/setting/SrcExpl.vim"         "$HOME/.vim/settings/SrcExpl.vim"
-    lnif "$endpath/setting/bufexplorer.vim"     "$HOME/.vim/settings/bufexplorer.vim"
-    lnif "$endpath/setting/vim-mark.vim"        "$HOME/.vim/settings/vim-mark.vim"
-    lnif "$endpath/setting/gtags.vim"           "$HOME/.vim/settings/gtags.vim"
+    lnif "$endpath/setting/IndexedSearch.vim"   "$HOME/.vim/settings/IndexedSearch.vim"
     lnif "$endpath/setting/Pydiction.vim"       "$HOME/.vim/settings/Pydiction.vim"
+    lnif "$endpath/setting/SrcExpl.vim"         "$HOME/.vim/settings/SrcExpl.vim"
+    lnif "$endpath/setting/airline.vim"         "$HOME/.vim/settings/airline.vim"
+    lnif "$endpath/setting/bufexplorer.vim"     "$HOME/.vim/settings/bufexplorer.vim"
+    lnif "$endpath/setting/gtags.vim"           "$HOME/.vim/settings/gtags.vim"
+    lnif "$endpath/setting/showmarks.vim"       "$HOME/.vim/settings/showmarks.vim"
+    lnif "$endpath/setting/syntastic.vim"       "$HOME/.vim/settings/syntastic.vim"
+    lnif "$endpath/setting/tagbar.vim"          "$HOME/.vim/settings/tagbar.vim"
+    lnif "$endpath/setting/ultisnips.vim"       "$HOME/.vim/settings/ultisnips.vim"
+    lnif "$endpath/setting/vim-mark.vim"        "$HOME/.vim/settings/vim-mark.vim"
     lnif "$endpath/vundle_local"                "$HOME/.vim/.vundles.local"
+
+    # Useful setting for zsh
+    lnif "$endpath/zsh/autoenv.zsh"             "$HOME/.zsh.after/autoenv.zsh"
+    lnif "$endpath/zsh/exportAndroid.zsh"       "$HOME/.zsh.after/exportAndroid.zsh"
+    lnif "$endpath/zsh/mountAndroid.zsh"        "$HOME/.zsh.after/mountAndroid.zsh"
+    lnif "$endpath/zsh/pyenv.zsh"               "$HOME/.zsh.after/pyenv.zsh"
 
     ret="$?"
     success "$1"
@@ -135,14 +148,14 @@ create_symlinks() {
 setup_vundle() {
     system_shell="$SHELL"
     export SHELL='/bin/sh'
-    
+
     vim \
         -u "$app_dir/.vimrc.bundles.default" \
         "+set nomore" \
         "+BundleInstall!" \
         "+BundleClean" \
         "+qall"
-    
+
     export SHELL="$system_shell"
 
     success "$1"
@@ -157,4 +170,4 @@ clone_repo      "Successfully cloned $app_name"
 create_symlinks "Setting up vim symlinks"
 
 msg             "\nThanks for installing $app_name."
-msg             "© `date +%Y` http://aceofall.gitbug.com/"
+msg             "© `date +%Y` http://aceofall.github.com/"

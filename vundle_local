@@ -1,42 +1,46 @@
 " My common vim plugin {
-	" Cscope key mapping
-	Bundle "aceofall/cscope_maps.vim.git"
+    " Cscope key mapping
+    Bundle "aceofall/cscope_maps.vim.git"
 
-	" Gtags key mapping
-	Bundle "aceofall/gtags.vim.git"
+    " Gtags key mapping
+    Bundle "aceofall/gtags.vim.git"
 
-	" Buffer Explorer
-	Bundle "vim-scripts/bufexplorer.zip.git"
+    " Buffer Explorer
+    Bundle "vim-scripts/bufexplorer.zip.git"
 
-	" SrcExpl
-	Bundle "vim-scripts/SrcExpl.git"
+    " SrcExpl
+    Bundle "vim-scripts/SrcExpl.git"
 
-	" Vim-Mark
-	Bundle "aceofall/vim-mark.git"
+    " Vim-Mark
+    Bundle "aceofall/vim-mark.git"
 
-	" Vim-Wiki
-	Bundle "vimwiki/vimwiki"
+    " Vim-Wiki
+    Bundle "vimwiki/vimwiki"
 
-	" Vim-Swoop
-	Bundle "pelodelfuego/vim-swoop"
+    " Vim-Swoop
+    Bundle "pelodelfuego/vim-swoop"
 
-	" Pydiction
+    " Pydiction
     Bundle "vim-scripts/Pydiction"
+
+    " ultisnips
+    Bundle "SirVer/ultisnips"
 " }
 
-" SPF platform vim plugin for me {
-	if SPF()
-	    " ShowMark
-	    Bundle "xsunsmile/showmarks.git"
 
-	    " IndexedSearch
-	    Bundle "vim-scripts/IndexedSearch.git"
-	endif
+" SPF platform vim plugin for me {
+    if SPF()
+        " ShowMark
+        Bundle "xsunsmile/showmarks.git"
+
+        " IndexedSearch
+        Bundle "vim-scripts/IndexedSearch.git"
+    endif
 " }
 
 " YADR platform vim plugin for me {
-	if YADR()
-	    " TagBar
-	    Bundle "majutsushi/tagbar"
-	endif
+    if YADR()
+        " TagBar
+        Bundle "majutsushi/tagbar"
+    endif
 " }
