@@ -139,11 +139,14 @@ create_symlinks() {
     lnif "$endpath/zsh/mountAndroid.zsh"        "$HOME/.zsh.after/mountAndroid.zsh"
     lnif "$endpath/zsh/pyenv.zsh"               "$HOME/.zsh.after/pyenv.zsh"
 
-    # GNU global gtag
+    # GNU global shell
     lnif "$endpath/zsh/gtags.zsh"               "$HOME/.zsh.after/gtags.zsh"
 
-    # GNU global gtag
+    # GNU global config““
     lnif "$endpath/globalrc"                    "$HOME/.globalrc"
+
+    # GIT user profile
+    lnif "$endpath/gitconfig_user"              "$HOME/.gitconfig.user"
 
     ret="$?"
     success "$1"

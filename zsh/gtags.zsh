@@ -1,5 +1,5 @@
-export GTAGSLABEL=ctags
-#export GTAGSLABEL=new-ctags
+#export GTAGSLABEL=ctags
+export GTAGSLABEL=new-ctags
 
 if [ -r $PWD/.globalrc  ]; then
     GTAGSCONF=$PWD/.globalrc

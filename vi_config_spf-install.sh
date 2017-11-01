@@ -121,6 +121,9 @@ create_symlinks() {
     # GNU global gtag
     lnif "$endpath/globalrc"            "$HOME/.globalrc"
 
+    # GIT user profile
+    lnif "$endpath/gitconfig_user"      "$HOME/.gitconfig.user"
+
     ret="$?"
     success "$1"
     debug

@@ -1,1 +1,3 @@
-export PATH=~/DriveAndroid/bin:$PATH
+if [[ $platform == 'darwin' ]]; then
+    export PATH=~/DriveAndroid/bin:$PATH
+fi
