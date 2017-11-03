@@ -138,6 +138,7 @@ create_symlinks() {
     lnif "$endpath/zsh/exportAndroid.zsh"       "$HOME/.zsh.after/exportAndroid.zsh"
     lnif "$endpath/zsh/mountAndroid.zsh"        "$HOME/.zsh.after/mountAndroid.zsh"
     lnif "$endpath/zsh/pyenv.zsh"               "$HOME/.zsh.after/pyenv.zsh"
+    lnif "$endpath/zsh/tmux.zsh"                "$HOME/.zsh.after/tmux.zsh"
 
     # GNU global shell
     lnif "$endpath/zsh/gtags.zsh"               "$HOME/.zsh.after/gtags.zsh"
