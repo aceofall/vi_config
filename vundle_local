@@ -25,6 +25,9 @@
 
     " ultisnips
     Bundle "SirVer/ultisnips"
+
+    " incsearch
+    Bundle "haya14busa/incsearch.vim"
 " }
 
 
