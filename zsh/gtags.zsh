@@ -1,5 +1,9 @@
 #export GTAGSLABEL=ctags
-export GTAGSLABEL=new-ctags
+if [[ $platform == 'linux' ]]; then
+    export GTAGSLABEL=new-ctags
+elif [[ $platform == 'darwin' ]]; then
+    export GTAGSLABEL=ctags
+fi
 
 if [ -r $PWD/.globalrc  ]; then
     GTAGSCONF=$PWD/.globalrc
