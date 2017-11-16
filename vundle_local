@@ -28,6 +28,15 @@
 
     " incsearch
     Bundle "haya14busa/incsearch.vim"
+
+    " IndexedSearch
+    Bundle "davidhalter/jedi-vim"
+
+    " vim-pydocstring
+    Bundle "heavenshell/vim-pydocstring"
+
+    " completor
+    Bundle "maralla/completor.vim"
 " }
 
 
@@ -45,5 +54,20 @@
     if YADR()
         " TagBar
         Bundle "majutsushi/tagbar"
+
+        " neocomplcache
+        Bundle 'Shougo/neocomplcache'
+
+        " neosnippet
+        Bundle 'Shougo/neosnippet'
+
+        " neosnippet-snippets
+        Bundle 'Shougo/neosnippet-snippets'
+
+        " rainbow
+        Bundle 'luochen1990/rainbow'
+
+        " supertab
+        Bundle 'ervandew/supertab'
     endif
 " }

@@ -22,6 +22,15 @@ let g:tagbar_width = 30
 " do not show the error list automatically
 let g:syntastic_auto_loc_list=0
 
+" Coding line range for linux.
+set colorcolumn=80
+
+" Vim copy buffer to clipboard
+set clipboard=unnamed
+
+" View cursor line, cursor column
+set cursorline cursorcolumn
+
 if MACVIM()
     " Create tab window like working screen/tmux.
     nmap <C-A><C-A> :tabp<CR>

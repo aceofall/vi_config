@@ -1,4 +1,4 @@
 " Linux platform airline colorscheme
-if LINUX()
+if has('unix') && !has('macunix') && !has('win32unix')
     let g:airline_theme = 'badwolf'
 endif
