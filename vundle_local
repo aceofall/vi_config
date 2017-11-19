@@ -41,10 +41,10 @@
     " vimshell
     Bundle "Shougo/vimshell"
 
-    " vimshell
+    " vimproc
     Bundle "Shougo/vimproc"
 
-    " vimshell
+    " vim-pyenv
     Bundle "lambdalisue/vim-pyenv"
 " }
 
