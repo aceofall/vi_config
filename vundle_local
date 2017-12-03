@@ -44,8 +44,14 @@
     " vimproc
     Bundle "Shougo/vimproc"
 
-    " vim-pyenv
-    Bundle "lambdalisue/vim-pyenv"
+    " vim-grepper
+    Bundle "mhinz/vim-grepper"
+
+    " vim-startify
+    Bundle "mhinz/vim-startify"
+
+    " vim-lookup
+    Bundle "mhinz/vim-lookup"
 " }
 
 
@@ -78,5 +84,8 @@
 
         " supertab
         Bundle 'ervandew/supertab'
+
+        " vim-lookup
+        Bundle 'mhinz/vim-signify'
     endif
 " }
