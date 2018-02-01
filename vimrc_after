@@ -31,6 +31,9 @@ set clipboard=unnamed
 " View cursor line, cursor column
 set cursorline cursorcolumn
 
+" Don't use mouse
+set mouse=
+
 if MACVIM()
     " Create tab window like working screen/tmux.
     nmap <C-A><C-A> :tabp<CR>

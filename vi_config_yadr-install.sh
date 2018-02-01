@@ -154,6 +154,9 @@ create_symlinks() {
     # GIT user profile
     lnif "$endpath/gitconfig_user"              "$HOME/.gitconfig.user"
 
+    # zephyr project config
+    lnif "$endpath/zsh/zephyr.zsh"              "$HOME/.zsh.after/zephyr.zsh"
+
     ret="$?"
     success "$1"
     debug
