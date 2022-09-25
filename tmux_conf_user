@@ -15,3 +15,14 @@ bind-key -r L resize-pane -R
 # connected to the *session*, constrain window size to the maximum size of any 
 # client connected to *that window*. Much more reasonable.
 setw -g aggressive-resize on
+
+unbind-key C-k
+
+#set -g default-command "reattach-to-user-namespace -l zsh"
+
+setw -g mode-keys vi
+unbind -Tcopy-mode-vi Enter
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'V' send -X select-line
+bind-key -T copy-mode-vi 'r' send -X rectangle-toggle
+bind -Tcopy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"

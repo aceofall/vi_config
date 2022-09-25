@@ -53,11 +53,8 @@
     " vim-lookup
     Bundle "mhinz/vim-lookup"
 
-    " vim-pyenv
-    Bundle "lambdalisue/vim-pyenv"
-
-    " auto-pairs
-    Bundle "jiangmiao/auto-pairs"
+    " vim-go
+    Bundle 'fatih/vim-go'
 " }
 
 
